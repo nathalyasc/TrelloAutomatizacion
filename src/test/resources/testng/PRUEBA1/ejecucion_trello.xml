@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation_Trello_Project">
+
+
+	<parameter name="URL_PRINCIPAL"
+		value="https://trello.com/home" />
+
+	 <parameter name="email" value="nathalyasc@gmail.com" />
+	<parameter name="contrasena" value="04141352471" /> 
+	
+	
+	
+	<test name="TestTrello">
+		<classes>
+			<class name="cl.tecnova.qa.tests.TestTrello">
+				<methods>
+
+
+
+
+
+
+					 <include name="loginUsuario" />
+                      <include name="loginIncorrecto"  />
+                      <include name="crearTablero" />
+                       <include name="addTarjeta"/>
+                      <include name="updateTarjeta"/>
+                       <include name="moverTarjeta"/>
+                        <include name="elimTablero" />
+
+
+
+
+
+			
+
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
